@@ -6,12 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
-    <title>reveal.js</title>
+    <meta name="descripcion" content="Reveal JS Framework" />
+    <meta name="keywords" content="HTML,CSS,RevealJS" />
+    <meta name="author" content="Solano Pillaca Jason" />
+    <title>RevealJS-Presentation</title>
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
@@ -20,16 +22,641 @@
     <div class="reveal">
       <div class="slides">
         <section>
+          <a href="https://revealjs.com">
+            <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js
+            logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent"
+            class="demo-logo" / >
+          </a>
+          <h4>The HTML Presentation Framework</h4>
+          <p>
+            <small
+              >Presentacion creada por
+              <a href="https://www.hackerrank.com/pajason2000">Solano Pillaca Jason Ennio</a>
+              <hr />
+              Codigo: 181.2503.025
+              <hr />
+              Escuela: Ingenieria de Sistemas e Informática
+              <hr />
+              Docente: Romero Aguilar Dante Enrique
+              <hr />
+              Facultad: Facultad de Ciencias
+            </small>
+          </p>
+        </section>
+        <section>
+          <h2>La estructura web</h2>
+          <p>
+            <b>Diseño Web básico</b><br /><b>HTML</b>: Estructura<br /><b>CSS</b>: Presentación
+            <br /><b>JavaScript</b>: Comportamiento
+          </p>
+        </section>
+        <section class="slide2">
+          <h2>¿Qué es HTML?</h2>
+          <p>HTML son las siglas de HyperTextMarkupLanguage</p>
+          <p>
+            A diferencia de un lenguaje de programación o de secuencias de comandos que usa
+            secuencias de comandos para realizar funciones, un lenguaje de marcado usa etiquetas
+            para identificar el contenido
+          </p>
+        </section>
+        <section>
+          <h2 data-id="code-title">Etiquetas</h2>
+          <p>HTML es un lenguaje que se basa en etiquetas</p>
+          <pre><code data-line-numbers data-trim>
+					<h1>Soy un título</h1>
+					<p>Soy una etiqueta</p>
+						</code></pre>
+        </section>
+        <section>
           <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+            <p style="font-size: 0.8em">
+              el documento HTML tiene etiquetas HTML de apertura y cierre. <br />
+              Todo documento de HTML está rodeado por la etiqueta <b>&lt;html&gt;</b>
+            </p>
             <pre data-id="code-animation"><code data-line-numbers data-trim>
-              <!--Estado inicial del código-->
+			  &lt;html&gt;
+			  ...
+			  &lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+
+            <p style="font-size: 0.8em">
+              La etiqueta <b>head</b> se usa para el encabezado del documento <br />En encabezado
+              contiene todos los elementos no visuales que ayudan a que la pagina funcione
+              correctamente.
+            </p>
+            <pre data-id="code-animation"><code data-line-numbers="2-4" data-trim>
+			&lt;html&gt;
+			&lt;head&gt;
+			...					
+			&lt;/head&gt;
+			...
+			&lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+            <p style="font-size: 0.8em">
+              La etiqueta <b>body</b> sigue a la etiqueta de la cabeza <br />En esta etiqueta se
+              encuentran todos los elementos visuales <br />Como por ejemplo: títulos, párrafos,
+              listas, imágenes, etc.
+            </p>
+            <pre data-id="code-animation"><code data-line-numbers="5-7" data-trim>
+			&lt;html&gt;
+			&lt;head&gt;
+			...
+			&lt;/head&gt;
+			&lt;body&gt;
+			...	
+			&lt;/body&gt;
+			&lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+            <p style="font-size: 0.8em">La etiqueta <b>title</b> define el título de la pagina</p>
+            <pre data-id="code-animation"><code data-line-numbers="3" data-trim>
+			&lt;html&gt;
+				&lt;head&gt;
+					&lt;title&gt;RevealJS-Presentation&lt;/title&gt;
+				&lt;/head&gt;
+				&lt;body&gt;
+				...	
+				&lt;/body&gt;
+			&lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+            <p style="font-size: 0.8em">
+              La etiqueta <b>meta</b> define la infomación de la información que desplegamos en la
+              pagina web. Son usados para especificar la codificacion de caracteres, descripcion,
+              autor, palabras claves, etc.
+            </p>
+            <pre data-id="code-animation"><code data-line-numbers="3-6" data-trim>
+			&lt;html&gt;
+				&lt;head&gt;
+					&lt;meta charset="UTF-8"&gt;
+					&lt;meta name="descripcion" content="Reveal JS Framework"&gt;	
+					&lt;meta name="keywords" content="HTML,CSS,RevealJS"&gt;
+					&lt;meta name="author" content="Solano Pillaca Jason"&gt;
+					&lt;title&gt;RevealJS-Presentation&lt;/title&gt;
+				&lt;/head&gt;
+				&lt;body&gt;
+				...	
+				&lt;/body&gt;
+			&lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+            <p style="font-size: 0.8em">
+              Los elementos <b>h1</b>,<b>h2</b>,<b>h3</b>,<b>h4</b>,<b>h5</b> y <b>h6</b> se usar
+              para definir títulos
+            </p>
+            <pre data-id="code-animation"><code data-line-numbers="6-11" data-trim>
+			&lt;html&gt;
+				&lt;head&gt;
+				...
+				&lt;/head&gt;
+				&lt;body&gt;
+					&lt;h1&gt;Título de mayor jerarquía&lt;/h1&gt;	
+					&lt;h2&gt;Título de segunda jerarquía&lt;/h2&gt;	
+					&lt;h3&gt;Título de tercera jerarquía&lt;/h3&gt;	
+					&lt;h4&gt;Título de cuarta jerarquía&lt;/h4&gt;	
+					&lt;h5&gt;Título de quinta jerarquía&lt;/h5&gt;	
+					&lt;h6&gt;Título de menor jerarquía&lt;/h6&gt;	
+				&lt;/body&gt;
+			&lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>Estructura básica HTML</h2>
+            <p style="font-size: 0.8em">
+              El elemento <b>p</b> se usa para definir párrafos y el elemento <b>br</b> para un
+              salto de linea
+            </p>
+            <pre data-id="code-animation"><code data-line-numbers="12-13" data-trim>
+			&lt;html&gt;
+				&lt;head&gt;
+				...
+				&lt;/head&gt;
+				&lt;body&gt;
+					&lt;h1&gt;Título de mayor jerarquía&lt;/h1&gt;	
+					&lt;h2&gt;Título de segunda jerarquía&lt;/h2&gt;	
+					&lt;h3&gt;Título de tercera jerarquía&lt;/h3&gt;	
+					&lt;h4&gt;Título de cuarta jerarquía&lt;/h4&gt;	
+					&lt;h5&gt;Título de quinta jerarquía&lt;/h5&gt;	
+					&lt;h6&gt;Título de menor jerarquía&lt;/h6&gt;	
+					&lt;p&gt;Soy un párrafo&lt;/p&gt;	
+					&lt;p&gt;Soy un párrafo&lt;br&gt; con un salto de linea&lt;/p&gt;	
+				&lt;/body&gt;
+			&lt;/html&gt;
+				   </code></pre>
+          </section>
+          <section>
+            <h2>¿Quieres aprender más?</h2>
+            <p>Dirigite a la <a href="https://devdocs.io/html/">documentación de HTML</a></p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>¿Qué es CSS?</h2>
+            <small
+              >CSS significa hoja de estilo de cascada <br />Sirve para aplicar específicos éstilos
+              a los elementos HTML
+            </small>
+          </section>
+          <section>
+            <h2>¿Cómo utilzizalo?</h2>
+            <small>
+              Hay 3 formas de utilizarlo:
+              <br />
+              <ol>
+                <li>Inline CSS</li>
+                <li>CSS embebido</li>
+                <li>CSS externo</li>
+              </ol>
+            </small>
+          </section>
+          <section>
+            <h2>Inline CSS</h2>
+            <small>Usando el atributo style en un elemento HTML específico</small>
+            <pre><code data-trim data-line-numbers>
+            &lt;p style="color:white; background-color:gray;"&gt;
+                Este es un ejemplo de CSS Inline 
+            &lt;/p&gt;
+            </code></pre>
+            <small>Resultado:</small>
+            <div style="color: white; background-color: gray">Este es un ejemplo de CSS Inline</div>
+          </section>
+          <section>
+            <h2>CSS embebido u interno</h2>
+            <small
+              >Está definido con el elemento html <b>&lt;style&gt;</b> <br />
+              Se ubica dentro de la etiqueta <b>head</b>
+            </small>
+            <pre style="height: 40vh"><code style="height: 100%;" data-trim data-line-numbers>
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;title&gt;T&iacute;tulo&lt;/title&gt;
+                &lt;style&gt;
+                  p {
+                    color: black;
+                    background-color: white;
+                  }
+                &lt;/style&gt;
+                &lt;/head&gt;
+              &lt;body&gt;
+              &lt;p&gt;Soy un parrafo&lt;/p&gt;
+                &lt;p&gt;Soy otro parrafo&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+              </code></pre>
+            <small>Resultado:</small>
+            <div style="color: black; background-color: white">
+              <p>Soy un párrafo</p>
+              <p>Soy otro párrafo</p>
+            </div>
+          </section>
+          <section>
+            <h2>CSS externo</h2>
+            <small>
+              Con este método el estilo CSS está contenido en un archivo aparte con la extensión
+              .css
+              <br />Es referenciado en el documento HTML usando el tag <b>link</b> dentro de la
+              etiqueta <b>head</b>
+            </small>
+            <pre style="height: 40vh"><code style="height: 100%;" data-trim data-line-numbers=2>
+                            &lt;head&gt;
+                            &lt;link rel=&quot;stylesheet&quot; href=&quot;example.css&quot;&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                            &lt;p&gt;Un párrafo&lt;/p&gt;
+                            &lt;p&gt;Otro párrafo&lt;/p&gt;
+                            &lt;p&gt;Tercer párrafo&lt;/p&gt;
+                            &lt;/body&gt;
+                                  </code></pre>
+          </section>
+          <section>
+            <h2>Syntaxis</h2>
+            <small>
+              Las reglas de la <b>syntaxis</b> están compuestas por 3:
+              <hr />
+              <br />
+              <ol>
+                <li><b>Selector</b>: Es a que elemento le aplicamos cierto estilo</li>
+                <li><b>Propiedad</b>: Es el estilo u propiedad que le vamos a aplicar</li>
+                <li><b>Valor</b>: Es el valor de la propiedad</li>
+              </ol>
+              <br />
+              <hr />
+              Despues de asignar un estilo debe de ir el <b>;</b>
+            </small>
+            <pre><code data-trim data-line-numbers>
+              h1 {color:orange;}
+            </code></pre>
+            <table style="border-collapse: collapse; border: 1px solid white">
+              <thead>
+                <tr>
+                  <th>Selector</th>
+                  <th>Propiedad</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>h1</td>
+                  <td>color</td>
+                  <td>orange</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h2>Tipos de selectores</h2>
+            <small>
+              Se tiene 3 tipos de selectores:
+              <br />
+              <hr />
+              <ol>
+                <li>Selector por tipo</li>
+                <li>Selector por id y class</li>
+                <li>Selector descendiente</li>
+              </ol>
+            </small>
+          </section>
+          <section>
+            <h2>Selector por tipo</h2>
+            <small>Por ejemplo para estilar todos los párrafos en la página</small>
+            <pre><code>
+                p {
+                  color: red;
+                  font-size:130%;
+               }
+              </code></pre>
+          </section>
+          <section>
+            <h2>Selector por id y class</h2>
+            <small
+              >El selector id te permite estilar un elemento segun su id
+              <br />
+              El archivo HTML:
+            </small>
+            <pre><code data-line-numbers data-trim="">
+           &lt;div id=&quot;intro&quot;&gt;
+               &lt;p&gt;Este párrafo está dentro de la etiqueta div&lt;/p&gt;
+           &lt;/div&gt;
+               &lt;p&gt;Este párrafo está fuera de la etiqueta div&lt;/p&gt;
+              </code></pre>
+            <small>El archivo CSS:</small>
+            <pre><code data-line-numbers data-trim>
+                #intro {
+                  color: violet;
+                  background-color: white;
+                }
+              </code></pre>
+            <div style="font-size: 0.5em; color: violet; background-color: white">
+              <p>Este párrafo está dentro de la etiqueta div</p>
+            </div>
+            <p style="font-size: 0.5em">Este párrafo está fuera de la etiqueta div</p>
+          </section>
+          <section>
+            <h2>Selector descendiente</h2>
+            <small
+              >Este selector se usa para seleccionar ciertos elemtos que son descendientes de otros
+              elementos
+              <br />
+              Por ejemplo, para seleccionar solo los elementos <b>em</b> dentro de la clase
+              <b>primero</b> que está dentro del id <b>intro</b>
+              <br />
+              El archivo HTML:
+            </small>
+            <pre><code data-trim data-line-numbers>
+             &lt;div id=&quot;intro&quot;&gt;
+               &lt;p class=&quot;primero&quot;&gt;Esto es un&lt;em&gt; párrafo&lt;/em&gt;&lt;/p&gt;
+               &lt;p&gt;Esto es un &lt;em&gt; párrafo&lt;/em&gt fuera de la clase.&lt;/p&gt;
+             &lt;/div&gt;
+              </code></pre>
+            <small>El archivo CSS:</small>
+            <pre><code data-trim data-line-numbers>
+                #intro .primero em {
+                  color: pink; 
+                  background-color:gray;
+               }
+              </code></pre>
+            <div style="font-size: 0.5em; margin: 0">
+              <p style="">
+                Esto es un <em style="color: pink; background-color: yellow">párrafo</em>
+              </p>
+              <p>Esto es un párrafo fuera de la clase</p>
+            </div>
+          </section>
+          <section>
+            <h2>¿Quieres aprender más?</h2>
+            <p>Dirigite a la <a href="https://devdocs.io/css/">documentación de CSS</a></p>
+          </section>
+        </section>
+        <section>
+          <h2>¿Qué es RevealJS?</h2>
+          <ul style="font-size: 0.7em">
+            <li>
+              Es un framework opensource de javascript que permite crear presentaciones multimedia
+              impresionantes en la Web usando HTML.
+            </li>
+            <li>
+              Esta dirigido a los desarrolladores, por lo que es necesario saber las bases sobre
+              HTML y CSS.
+            </li>
+            <li>
+              Una gran ventaja frente a otros software de presentaciones, es que al ser un framework
+              es posible agregarle cualquier tecnología.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Descargar</h2>
+          <a href="https://github.com/hakimel/reveal.js/">Repositorio de github</a>
+        </section>
+        <section>
+          <section>
+            <h2>¿Cómo usarlo?</h2>
+            <p>
+              <small
+                >Una vez descargado el framework, tendríamos la siguiente carpeta. Solo usaremos el
+                <b>index.html</b></small
+              >
+            </p>
+            <img
+              style="width: 245px; position: relative; bottom: 50px"
+              src="tree.png"
+              alt="No se encontró el árbolito"
+            />
+          </section>
+          <section data-auto-animate>
+            <h2>Clase Slides</h2>
+            <small>
+              La magia solo ocurre en la clase <b>slides</b> dentro de <b>reveal</b> <br />Cada
+              etiqueta <b>section</b> representa una diapositiva, en la que podemos poner el código
+              que más nos convenga para hacer cada diapositiva <br />En este caso hay solo 2
+              dispositivas: <b>slide 1</b> y <b>slide 2</b></small
+            >
+            <hr />
+            <pre data-id="code-animation"><code data-line-numbers="13-18" data-trim>
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;
+  &lt;title&gt;reveal.js&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/reset.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/reveal.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/theme/black.css&quot; id=&quot;theme&quot;&gt;
+  &lt;!-- Theme used for syntax highlighted code --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;plugin/highlight/monokai.css&quot; id=&quot;highlight-theme&quot;&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class=&quot;reveal&quot;&gt;
+   &lt;div class=&quot;slides&quot;&gt;
+	  &lt;section&gt;Slide 1&lt;/section&gt;
+	  &lt;section&gt;Slide 2&lt;/section&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+
+		&lt;script src=&quot;dist/reveal.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;plugin/notes/notes.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;plugin/markdown/markdown.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;plugin/highlight/highlight.js&quot;&gt;&lt;/script&gt;
+		&lt;script&gt;
+			// More info about initialization &amp; config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
             </code></pre>
           </section>
           <section data-auto-animate>
-            <pre data-id="code-animation"><code data-line-numbers data-trim>
-              <!--Estado final del código-->
+            <small
+              ><b
+                >Un ejemplo práctico realizando la primera diapositiva de está presentación</b
+              ></small
+            >
+            <pre
+              data-id="code-animation"
+              style="height: 100vh"
+            ><code style="width: 100%; height: 100%;" data-trim data-line-numbers="21-42">
+              &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;
+    /&gt;
+
+    &lt;title&gt;reveal.js&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/reset.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/reveal.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/theme/black.css&quot; id=&quot;theme&quot; /&gt;
+
+    &lt;!-- Theme used for syntax highlighted code --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;plugin/highlight/monokai.css&quot; id=&quot;highlight-theme&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;reveal&quot;&gt;
+      &lt;div class=&quot;slides&quot;&gt;
+        &lt;section&gt;
+          &lt;a href=&quot;https://revealjs.com&quot;&gt;
+            &lt;img src=&quot;https://static.slid.es/reveal/logo-v1/reveal-white-text.svg&quot; alt=&quot;reveal.js
+            logo&quot; style=&quot;height: 180px; margin: 0 auto 4rem auto; background: transparent&quot;
+            class=&quot;demo-logo&quot; / &gt;
+          &lt;/a&gt;
+          &lt;h4&gt;The HTML Presentation Framework&lt;/h4&gt;
+          &lt;p&gt;
+            &lt;small
+              &gt;Presentacion creada por
+              &lt;a href=&quot;https://www.hackerrank.com/pajason2000&quot;&gt;Solano Pillaca Jason Ennio&lt;/a&gt;
+              &lt;hr /&gt;
+              Codigo: 181.2503.025
+              &lt;hr /&gt;
+              Escuela: Ingenieria de Sistemas e Inform&aacute;tica
+              &lt;hr /&gt;
+              Docente: Romero Aguilar Dante Enrique
+              &lt;hr /&gt;
+              Facultad: Facultad de Ciencias
+            &lt;/small&gt;
+          &lt;/p&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&quot;dist/reveal.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;plugin/notes/notes.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;plugin/markdown/markdown.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;plugin/highlight/highlight.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      // More info about initialization &amp; config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
             </code></pre>
           </section>
+          <section data-auto-animate>
+            <h2>¿Cómo insertar código?</h2>
+            <small
+              >Insertar código es la característica más llamativa de RevealJS <br />Para ello solo
+              tenemos que copiar y pegar nuestro código dentro de la etiqueta <b>code</b>, dentro de
+              otra etiqueta <b>pre</b>
+            </small>
+            <pre id="code-animation"><code data-trim data-line-numbers>
+  &lt;div class=&quot;reveal&quot;&gt;
+      &lt;div class=&quot;slides&quot;&gt;
+        &lt;section&gt;
+              &lt;pre&gt;&lt;code&gt;
+              &lt;!--Aqui va el codigo--&gt;
+	            &lt;/code&gt;&lt;/pre&gt;
+	      &lt;/section&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+              </code></pre>
+          </section>
+          <section data-auto-animate>
+            <h2>¿Cómo formatear el código?</h2>
+            <small
+              >Si no le hemos indicado a <b>RevealJS</b> como queremos que se presente el código,
+              <br />este se vera desordenado y sin ciertas lineas resaltadas <br />Entonces
+              agregamos los atributos a la etiqueta <b>code</b>
+              <hr />
+              El atributo <b>data-trim</b> se usa para borrar los espacios y así poder espaciarlos a
+              nuestro gusto
+              <hr />
+              El atributo data-line-numbers se usa para enumerar las lineas del código y también
+              resaltar ciertas lineas, si se especifican</small
+            >
+            <pre id="code-animation"><code data-trim data-line-numbers="3-8">
+  &lt;div class=&quot;reveal&quot;&gt;
+      &lt;div class=&quot;slides&quot;&gt;
+        &lt;section&gt;
+              &lt;pre&gt;&lt;code data-trim data-line-numbers="2"&gt;
+              var myName = "Solano Pillaca Jason"; 
+              console.log(`My name is: ${myName}`);
+	            &lt;/code&gt;&lt;/pre&gt;
+	      &lt;/section&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+              </code></pre>
+          </section>
+          <section>
+            <h2>¿Cómo animar el código?</h2>
+            <small
+              >Para animar el código simplemente creamos 2 diapositivas, el primero con el estado
+              inicial del código y el segundo con el estado final <br />Cada una de las
+              diaposiitivas debe de tener el atributo <b>data-auto-animate</b> <br />El código que
+              queremos que se anime dentro de las diapositivas debe de tener el atributo
+              <b>data-id="code-animation"</b></small
+            >
+            <pre><code data-trim data-line-numbers="4-13">
+    &lt;div class=&quot;reveal&quot;&gt;
+      &lt;div class=&quot;slides&quot;&gt;
+        &lt;section&gt;
+          &lt;section data-auto-animate&gt;
+            &lt;pre data-id=&quot;code-animation&quot;&gt;&lt;code data-line-numbers data-trim&gt;
+              &lt;!--Estado inicial del c&oacute;digo--&gt;
+            &lt;/code&gt;&lt;/pre&gt;
+          &lt;/section&gt;
+          &lt;section data-auto-animate&gt;
+            &lt;pre data-id=&quot;code-animation&quot;&gt;&lt;code data-line-numbers data-trim&gt;
+              &lt;!--Estado final del c&oacute;digo--&gt;
+            &lt;/code&gt;&lt;/pre&gt;
+          &lt;/section&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h2>Referencias</h2>
+          <ol style="font-size: 0.8em">
+            <li>
+              <a href="https://www.sitepoint.com/creating-slick-html-presentations-using-reveal-js/"
+                >Creating Slick HTML Presentations Using reveal.js</a
+              >
+              [Internet]. Sitepoint.com. 2020 [citado el 6 de septiembre del 2020].
+            </li>
+            <li>
+              <a href="https://revealjs.com/">The HTML presentation framework | reveal.js</a>
+              [Internet]. reveal.js. 2020 [citado el 6 de septiembre del 2020].
+            </li>
+            <li>
+              <a href="https://github.com/hakimel/reveal.js/">hakimel/reveal.js</a> [Internet].
+              GitHub. 2020 [citado el 6 de septiembre del 2020].
+            </li>
+            <li>
+              <a href="https://devdocs.io/html/">DevDocs — HTML documentation</a> [Internet]. Devdocs.io. 2020 [citado el 6 de septiembre del 2020].
+            </li>
+            <li>
+              <a href="https://devdocs.io/css/">DevDocs — CSS documentation</a> [Internet]. Devdocs.io. 2020 [citado el 6 de septiembre del 2020].
+            </li>
+          </ol>
         </section>
       </div>
     </div>
@@ -44,7 +671,7 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
+        width: "120%",
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
